@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "IF-Shield for YouTube Shorts™",
+  "version": "1.0.0",
+  "description": "Hide YouTube Shorts shelves and limit your Shorts watching time or count to stay productive.",
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "IF-Shield Settings",
+    "default_icon": {
+      "16": "IF-Shield YouTube Shorts Logo.png",
+      "48": "IF-Shield YouTube Shorts Logo.png",
+      "128": "IF-Shield YouTube Shorts Logo.png"
+    }
+  },
+  "icons": {
+    "16": "IF-Shield YouTube Shorts Logo.png",
+    "48": "IF-Shield YouTube Shorts Logo.png",
+    "128": "IF-Shield YouTube Shorts Logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["sozler.json"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ]
+}

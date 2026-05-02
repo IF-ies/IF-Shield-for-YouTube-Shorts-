@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>IF-Shield for YouTube Shorts™</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="ext-container">
+        <!-- TopAppBar -->
+        <div class="header">
+            <span class="header-title" id="t-appName">IF-Shield for YouTube Shorts™</span>
+            <div class="header-actions">
+                <button id="lang-toggle" class="icon-btn">
+                    <span class="lang-text" id="lang-text">TR</span>
+                </button>
+                <button id="theme-toggle" class="icon-btn">
+                    <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
+                </button>
+                <button id="master-toggle" class="icon-btn primary" title="Kalkanı Aç/Kapat">
+                    <span class="material-symbols-outlined" id="shield-icon" style="font-variation-settings: 'FILL' 1;">shield</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Ana Sayfada Shorts Gizle -->
+            <div class="card">
+                <div>
+                    <h2 class="card-title" id="t-hideHomeTitle">Ana Sayfada Shorts Gizle</h2>
+                    <p class="card-desc" id="t-hideHomeDesc">Önerilen videoları engeller</p>
+                </div>
+                <label class="toggle-label">
+                    <input id="hide-home" class="toggle-input" type="checkbox" checked />
+                    <div class="toggle-track"><div class="toggle-thumb"></div></div>
+                </label>
+            </div>
+
+            <!-- Aramada Shorts Gizle -->
+            <div class="card">
+                <div>
+                    <h2 class="card-title" id="t-hideSearchTitle">Aramada Shorts Gizle</h2>
+                    <p class="card-desc" id="t-hideSearchDesc">Arama sonuçlarındaki Shorts'ları engeller</p>
+                </div>
+                <label class="toggle-label">
+                    <input id="hide-search" class="toggle-input" type="checkbox" checked />
+                    <div class="toggle-track"><div class="toggle-thumb"></div></div>
+                </label>
+            </div>
+
+            <!-- Sponsorlu Engelleme -->
+            <div class="card">
+                <div>
+                    <h2 class="card-title" id="t-hideSponsoredTitle">Sponsorlu Engelleme</h2>
+                    <p class="card-desc" id="t-hideSponsoredDesc">Sponsorlu reklamları arayüzden gizler</p>
+                </div>
+                <label class="toggle-label">
+                    <input id="hide-sponsored" class="toggle-input" type="checkbox" checked />
+                    <div class="toggle-track"><div class="toggle-thumb"></div></div>
+                </label>
+            </div>
+
+            <!-- Adet Limiti -->
+            <div class="card card-vertical">
+                <div class="card-header-row">
+                    <div>
+                        <h2 class="card-title" id="t-countLimitTitle">Adet Limiti</h2>
+                        <p class="card-desc" id="t-countLimitDesc">Video sayısına göre engeller</p>
+                    </div>
+                    <label class="toggle-label">
+                        <input id="enable-count-limit" class="toggle-input" type="checkbox" checked />
+                        <div class="toggle-track"><div class="toggle-thumb"></div></div>
+                    </label>
+                </div>
+                <div class="limit-row">
+                    <input id="count-limit-value" class="input-field" min="1" type="number" value="5"/>
+                    <div class="static-unit" id="t-unitAdet">Adet</div>
+                </div>
+            </div>
+
+            <!-- Zaman Limiti -->
+            <div class="card card-vertical">
+                <div class="card-header-row">
+                    <div>
+                        <h2 class="card-title" id="t-timeLimitTitle">Zaman Limiti</h2>
+                        <p class="card-desc" id="t-timeLimitDesc">İzlenen süreye göre engeller</p>
+                    </div>
+                    <label class="toggle-label">
+                        <input id="enable-time-limit" class="toggle-input" type="checkbox" />
+                        <div class="toggle-track"><div class="toggle-thumb"></div></div>
+                    </label>
+                </div>
+                <div class="limit-row">
+                    <input id="time-limit-value" class="input-field" min="1" type="number" value="10"/>
+                    <div class="custom-select-wrapper" id="time-unit-dropdown" tabindex="0">
+                        <div class="select-selected" id="time-select-selected">
+                            <span id="time-selected-text">Dakika</span>
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                        <div class="select-items select-hide">
+                            <div data-value="saniye" id="t-optSaniye">Saniye</div>
+                            <div data-value="dakika" id="t-optDakika">Dakika</div>
+                            <div data-value="saat" id="t-optSaat">Saat</div>
+                            <div data-value="günlük" id="t-optGunluk">Günlük</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="save-limit" class="btn-primary" id="t-saveBtn">Ayarları Kaydet</button>
+        </main>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="status-indicator">
+                <div id="status-indicator" class="dot active"></div>
+                <span id="status-text">Şu an koruma aktif</span>
+            </div>
+            <a href="https://if-ies.com/IF-ShieldYouTubeforShorts" target="_blank" class="help-link">HELP</a>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
