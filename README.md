@@ -26,8 +26,8 @@ No more "just one more video" excuses.
 ## 🚀 Installation
 
 1. Clone the repo:
-   ```sh
-   git clone [https://github.com/if-ies/if-shield.git](https://github.com/if-ies/if-shield.git)
+   ```bash
+   git clone https://github.com/IF-ies/IF-Shield-for-YouTube-Shorts-.git
 2. Open Google Chrome and go to chrome://extensions/
 
 3. Enable "Developer mode" in the top right corner.
@@ -56,8 +56,8 @@ Bir yazılımcının en değerli sermayesi zamandır. Bu Chrome eklentisi, YouTu
 
 ## 🚀 Kurulum
 1. Repoyu bilgisayarınıza klonlayın:
-  Bash
-  git clone [https://github.com/if-ies/if-shield.git](https://github.com/if-ies/if-shield.git)
+   ```bash
+   git clone https://github.com/IF-ies/IF-Shield-for-YouTube-Shorts-.git
 2. Google Chrome'u açın ve adres çubuğuna chrome://extensions/ yazın.
 
 3. Sağ üst köşeden "Geliştirici modu" (Developer mode) seçeneğini aktif hale getirin.
