@@ -5,7 +5,7 @@
   <p><b>Stop scrolling. Start building.</b></p>
 </div>
 
-[🇹🇷 Türkçe açıklamalar için aşağı kaydırın (Click for Turkish)](#-türkçe-açıklama)
+[🇹🇷 Türkçe açıklamalar için aşağı kaydırın ]
 
 ## 📖 About The Project
 
