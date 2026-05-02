@@ -80,18 +80,21 @@ document.addEventListener('DOMContentLoaded', () => {
   let isExtensionEnabled = true;
   let currentTimeLimitUnit = 'dakika';
 
+  const defaultLang = navigator.language.startsWith('tr') ? 'tr' : 'en';
+  const defaultTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+
   // Load existing settings
   chrome.storage.local.get({
     hideHome: true,
-    hideSearch: true,
-    hideSponsored: true,
+    hideSearch: false,
+    hideSponsored: false,
     enableCountLimit: true,
     countLimitValue: 5,
     enableTimeLimit: false,
-    timeLimitValue: 10,
+    timeLimitValue: 1,
     timeLimitUnit: 'dakika',
-    theme: 'dark',
-    language: 'tr',
+    theme: defaultTheme,
+    language: defaultLang,
     isExtensionEnabled: true
   }, (res) => {
     hideHome.checked = res.hideHome;
