@@ -1,7 +1,7 @@
 # 🛡️ IF-Shield: YouTube Shorts Time Guardian ⏳
 
 <div align="center">
-  <img src="logo.png" alt="IF-Shield Logo" width="200"/>
+  <img src="IF-Shield%20YouTube%20Shorts%20Logo.png" alt="IF-Shield Logo" width="200"/>
   <p><b>Stop scrolling. Start building.</b></p>
 </div>
 
@@ -36,35 +36,32 @@ No more "just one more video" excuses.
 
 5. Pin the extension to your toolbar and take your time back!
 
+----------------------------------------------------------------------------------------------------
 
 🇹🇷 TÜRKÇE AÇIKLAMA
-📖 Proje Hakkında
-IF-Shield sıradan bir site engelleyici değildir. Sizi YouTube Shorts bataklığından çekip çıkarmak için tasarlanmış acımasız bir "Zaman Gardiyanı"dır.
+## 📖 Proje Hakkında
+**IF-Shield sıradan bir site engelleyici değildir. Sizi YouTube Shorts bataklığından çekip çıkarmak için tasarlanmış acımasız bir "Zaman Gardiyanı"dır.
 
 Bir yazılımcının en değerli sermayesi zamandır. Bu Chrome eklentisi, YouTube Shorts için belirlediğiniz süre dolduğunda sadece ekranı karartmakla kalmaz; algoritmik hipnozu anında keser ve karşınıza Mustafa Kemal Atatürk, Fatih Sultan Mehmet, Zeljko Obradovic, Cristiano Ronaldo gibi tarihin ve spor dünyasının efsanevi isimlerinden "tokat gibi" gerçek bir motivasyon sözü çıkarır.
 
 "Sadece bir video daha" bahanesine son.
 
-✨ Özellikler
-⏱️ Katı Süre Sınırı: Kendi kaydırma bütçeni belirle. Süre bittiğinde, merhamet yok.
+✨ Özellikler:
 
-🛑 Kesin Engelleme: Süre dolduğu an video akışını durdurur ve Shorts arayüzünü gizler.
+*  ⏱️ Katı Süre Sınırı: Kendi kaydırma bütçeni belirle. Süre bittiğinde, merhamet yok.
+*  🛑 Kesin Engelleme: Süre dolduğu an video akışını durdurur ve Shorts arayüzünü gizler.
+*  🔥 Efsanevi Motivasyonlar: Tembelliği ve ertelemeyi yok etmek için özenle seçilmiş, teyitli motivasyon sözlerini rastgele ekrana basar.
+*  🌍 İki Dil Desteği: Söz altyapısı tercih edilen dile göre İngilizce veya Türkçe olarak çalışacak şekilde (JSON formatında) tasarlanmıştır.
+*  ⚡ Hafif ve Hızlı: Saf JavaScript ile yazılmıştır, tarayıcıyı asla yormaz.
 
-🔥 Efsanevi Motivasyonlar: Tembelliği ve ertelemeyi yok etmek için özenle seçilmiş, teyitli motivasyon sözlerini rastgele ekrana basar.
+## 🚀 Kurulum
+1. Repoyu bilgisayarınıza klonlayın:
+  Bash
+  git clone [https://github.com/if-ies/if-shield.git](https://github.com/if-ies/if-shield.git)
+2. Google Chrome'u açın ve adres çubuğuna chrome://extensions/ yazın.
 
-🌍 İki Dil Desteği: Söz altyapısı tercih edilen dile göre İngilizce veya Türkçe olarak çalışacak şekilde (JSON formatında) tasarlanmıştır.
+3. Sağ üst köşeden "Geliştirici modu" (Developer mode) seçeneğini aktif hale getirin.
 
-⚡ Hafif ve Hızlı: Saf JavaScript ile yazılmıştır, tarayıcıyı asla yormaz.
+4. Sol üstteki "Paketlenmemiş öğeyi yükle" (Load unpacked) butonuna tıklayın ve klonladığınız klasörü seçin.
 
-🚀 Kurulum
-Repoyu bilgisayarınıza klonlayın:
-
-Bash
-git clone [https://github.com/if-ies/if-shield.git](https://github.com/if-ies/if-shield.git)
-Google Chrome'u açın ve adres çubuğuna chrome://extensions/ yazın.
-
-Sağ üst köşeden "Geliştirici modu" (Developer mode) seçeneğini aktif hale getirin.
-
-Sol üstteki "Paketlenmemiş öğeyi yükle" (Load unpacked) butonuna tıklayın ve klonladığınız klasörü seçin.
-
-Eklentiyi sabitleyin ve zamanınızı geri kazanın!
+5. Eklentiyi sabitleyin ve zamanınızı geri kazanın!
